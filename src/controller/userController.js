@@ -1,6 +1,6 @@
 const connection = require('../config/db');
 
-async function storeTask(request, response) {
+async function storeUser(request, response) {
     const params = Array(
         request.body.id,
         request.body.email,
@@ -34,5 +34,5 @@ async function storeTask(request, response) {
 }
 
 module.exports = {
-    storeTask 
+    storeUser 
 }
